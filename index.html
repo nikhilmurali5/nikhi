@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories with Friends</title>
+    <style>
+        /* Full-screen overlay for popup */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        /* Hide overlay when not visible */
+        .hidden {
+            display: none;
+        }
+
+        /* Body content */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for images */
+        .container {
+            padding: 20px;
+        }
+
+        /* Welcome message */
+        .greeting {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .greeting h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Gallery grid layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Style for each image item */
+        .image-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        // This function hides the overlay after 3 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                // Hide the overlay
+                document.getElementById('popup-overlay').classList.add('hidden');
+            }, 3000); // 3 seconds delay
+        }
+    </script>
+</head>
+<body>
+    <!-- Full-screen overlay with the message -->
+    <div id="popup-overlay" class="overlay">
+        Hello my dear PAKKIII
+    </div>
+
+    <div class="container">
+        <!-- Welcome message (this appears after the overlay) -->
+        <div class="greeting">
+            <h1>some of our memories</h1>
+            <h2>hope you like it</h2>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <!-- Image items -->
+            <div class="image-item">
+                <img src="images/photo1.jpg" alt="Memory 1">
+            </div>
+            <div class="image-item">
+                <img src="images/photo2.jpg" alt="Memory 2">
+            </div>
+            <div class="image-item">
+                <img src="images/photo3.jpg" alt="Memory 3">
+            </div>
+            <div class="image-item">
+                <img src="images/photo4.jpg" alt="Memory 4">
+            </div>
+            <div class="image-item">
+                <img src="images/photo5.jpg" alt="Memory 5">
+            </div>
+            <div class="image-item">
+                <img src="images/photo6.jpg" alt="Memory 6">
+            </div>
+            <div class="image-item">
+                <img src="images/photo7.jpg" alt="Memory 7">
+            </div>
+            <div class="image-item">
+                <img src="images/photo8.jpg" alt="Memory 8">
+            </div>
+            <div class="image-item">
+                <img src="images/photo9.jpg" alt="Memory 9">
+            </div>
+            <div class="image-item">
+                <img src="images/photo10.jpg" alt="Memory 10">
+            </div>
+            <div class="image-item">
+                <img src="images/photo11.jpg" alt="Memory 11">
+            </div>
+            <div class="image-item">
+                <img src="images/photo12.jpg" alt="Memory 12">
+            </div>
+            <div class="image-item">
+                <img src="images/photo13.jpg" alt="Memory 13">
+            </div>
+            <div class="image-item">
+                <img src="images/photo14.jpg" alt="Memory 14">
+            </div>
+            <div class="image-item">
+                <img src="images/photo15.jpg" alt="Memory 15">
+            </div>
+            <div class="image-item">
+                <img src="images/photo16.jpg" alt="Memory 16">
+            </div>
+            <div class="image-item">
+                <img src="images/photo17.jpg" alt="Memory 17">
+            </div>
+            <div class="image-item">
+                <img src="images/photo18.jpg" alt="Memory 18">
+            </div>
+            <div class="image-item">
+                <img src="images/photo19.jpg" alt="Memory 19">
+            </div>
+            <div class="image-item">
+                <img src="images/photo20.jpg" alt="Memory 20">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
